@@ -7,7 +7,8 @@
     String username = "nongnapa.jamamporn";
     String password = "nm1412nm.";
     String result = null;
-
+    String ran ="";
+    Random getRan = new Random();
     try {
 
         Properties props = System.getProperties();
@@ -34,9 +35,14 @@
                 "sender_username@gmail.com"));
         message.setRecipients(Message.RecipientType.TO,
                 InternetAddress.parse("puttapron07@gmail.com"));
-        message.setSubject("Test mail from JSP");
-        message.setText("Hello Noob fuck guy");
+                for(int i =0; i<5; i++){
 
+             int r = getRan.nextInt(10);
+             ran += r;
+           }
+             //System.out.print(ran);
+        message.setSubject("Test mail from JSP");
+        message.setText("Hello Noob fuck guy"+ran);
         Transport transport = emailSession.getTransport("smtps");
         transport.connect("smtp.gmail.com", username, password);
         transport.sendMessage(message, message.getAllRecipients());
