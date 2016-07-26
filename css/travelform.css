@@ -1,0 +1,69 @@
+.travel_form {
+	background-color: white;
+	border-radius: 5px;
+	border-color: 1px solid #777;
+	margin-top:30px;
+	box-shadow: 0px 0px 0px 5px rgba( 255,255,255,0.4 ), 0px 4px 20px rgba( 0,0,0,0.33 );
+}
+.travel_form ul {
+    width: 900px;
+    list-style-type: none;
+    list-style-position: outside;
+}
+.travel_form li{
+    padding:6px; 
+    border-bottom:1px solid #eee;
+    position:relative;
+}
+.travel_form li:first-child, .contact_form li:last-child {
+    border-bottom:1px solid #777;
+}
+.travel_form h2 {
+    margin:0;
+    display: inline;
+}
+.required_notification {
+    color:#d45252; 
+    margin:5px 0 0 0; 
+    display:inline;
+    float:right;
+}
+.travel_form label {
+    width:180px;
+    margin-top: 3px;
+    display:inline-block;
+    float:left;
+    padding:3px;
+}
+.travel_form input[type=number], 
+.travel_form input[type=email], 
+.travel_form input[type=text], 
+.travel_form input[type=password],
+.travel_form input[type=select]{
+    height:25px; 
+    width:220px; 
+    padding:5px 8px;
+}
+.travel_form input[type=number]::-webkit-inner-spin-button, 
+.travel_form input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+.travel_form input[type=radio] {
+    height:20px;
+    padding:5px 8px;
+}
+.travel_form textarea {padding:8px; width:300px;}
+
+.travel_form input[type=submit] {
+	padding: 8px;
+	border: none;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	font-size: .9em;
+	cursor: pointer;
+}
+.travel_form input[type=submit]:focus {
+	outline: none;
+}
+div.hashtag { display: none; }

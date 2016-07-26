@@ -1,0 +1,28 @@
+.travel_form {
+	background-color: white;
+	border-radius: 5px;
+	border-color: 1px solid #777;
+	padding-bottom: 20px;
+	box-shadow: 0px 0px 0px 5px rgba( 255,255,255,0.4 ), 0px 4px 20px rgba( 0,0,0,0.33 );
+}
+.travel_form h2 {
+    margin:0;
+    display: inline;
+}
+.travel_form li{
+    padding:6px;   
+    position:relative;
+}
+
+.travel_form ul {
+    list-style-type: none;
+    list-style-position: outside;
+    margin:0px;
+    padding:0px;
+}
+.required_notification {
+    color:#d45252; 
+    margin:5px 0 0 0; 
+    display:inline;
+    float:right;
+}
